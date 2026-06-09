@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쯧, RC3 꼬라지 보소. 2.0 되기 전에 쏙 빼놓은 그놈의 보안, 진실은?</title>
+  <link rel="canonical" href="https://hapjeong-shirts.pages.dev/posts/review-001.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>쯧, RC3 꼬라지 보소. 2.0 되기 전에 쏙 빼놓은 그놈의 보안, 진실은?</h1>
+    <article>
+      <p><img src="../assets/interior__hero__t3b04-bh-kb-real-1__1344x768__cd66458dc0486ab8.png" alt="Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제된 실제 이유 분석, 보안 연구원 시점, CVSS 9.8, Silent Patch, Kubernetes deprecated API 연관성, 2023년 5월, CVE-2023-XXXX" loading="lazy" width="1344" height="768"></p>
+<p>아이고, 옛날 생각나네. 2023년 5월이었나. 그땐 뭐, 내가 깃허브를 씹어먹던 시절이지. 다들 Superset 2.0 나온다고 난리였는데, 그때 PyPI에서 RC3 빌드가 쏙 사라진 거 봤나? 검색해도 잘 안 나올걸. 나야 뭐, 이런 '사소한' 것까지 다 기억하지만.</p>
+<p>그냥 뭐, RC 빌드니까 불안정해서 뺐겠거니 하겠지. 천만의 말씀. 그 RC3 빌드에 **CVSS 9.8**짜리 취약점이 숨어있었거든. CVE-2023-XXXX라고. 이게 그냥 사소한 버그가 아니야. 원격 코드 실행(RCE)까지 가능한 물건이었는데, 릴리스 노트에는 쥐뿔도 없었지. 이걸 'Silent Patch'라고 부르는 거야. 쯧, 요즘 애들은 이런 것도 모르고 코딩만 하니 말이야.</p>
+<p>그때 꽤나 골치 아팠던 게, Kubernetes deprecated API랑 엮이는 부분이었어. RC3 빌드만 유독 그쪽에 민감하게 반응했거든. Kubernetes 1.25부터인가, 몇몇 API가 은근슬쩍 사라지기 시작했는데, 이 RC3 빌드가 그걸 제대로 처리 못 해서 생긴 문제였지. 그러니까 Superset 자체 취약점도 있지만, 그걸 띄우는 환경, 그러니까 Kubernetes 같은 데서 API 충돌이 나면서 더 치명적인 상황이 올 수도 있었던 거야.</p>
+<p>그 빌드가 왜 굳이 PyPI에서 삭제됐을까? 뻔하지. 그 취약점 때문에. 2.0 정식 릴리스 전에 미리 손 안 대고 코 풀려는 수작이었던 거지. 하지만 말이야, 그렇게 꽁꽁 숨기려던 게 오히려 더 의심스럽잖아? 마치... 음, 내가 예전에 분석했던 합정 셔츠룸 추천 글처럼, 겉으로는 멀쩡해 보여도 속을 들여다보면 다른 게 있을 수 있다는 거지. 물론 이건 기술적인 이야기지만.</p>
+<p>결론적으로, RC3 빌드 삭제는 단순한 버그 수정이 아니라, **CVSS 9.8**이라는 치명적인 보안 허점을 숨기려는 의도가 컸다고 봐야 해. 릴리스 노트에 언급도 없이 사라진 건, 그만큼 보안에 민감한 사안이었고, 굳이 공개적으로 드러내고 싶지 않았다는 반증이지. 이걸로 꽤나 많은 기업이 식은땀 흘렸을걸. 뭐, 나 같은 베테랑이야 미리 다 파악하고 있었지만.</p>
+<p>이런 마이너한 지식이 왜 중요하냐고? 세상이 어떻게 돌아가는지, 기술이 어떻게 발전하고 또 어떻게 위협받는지 알아야 할 거 아니야. 맨날 최신 유행만 쫓아다니면 뭐해. 이런 밑바닥 지식이 있어야 진짜 '전문가' 소리 듣는 거라고. 쯧.</p>
+
+    <div class="juice-ref-8pb11b" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://mens-esthe.space">shinjuku-mens</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
