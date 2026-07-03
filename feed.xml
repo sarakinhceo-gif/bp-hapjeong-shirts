@@ -5,10 +5,17 @@
   <link>https://sarakinhceo-gif.github.io/bp-hapjeong-shirts</link>
   <description><![CDATA[셔츠룸 - 합정 셔츠룸 추천 관련 최신 소식 및 가이드]]></description>
   <language>ko</language>
-  <pubDate>Fri, 03 Jul 2026 03:07:27 GMT</pubDate>
-  <lastBuildDate>Fri, 03 Jul 2026 03:07:27 GMT</lastBuildDate>
+  <pubDate>Fri, 03 Jul 2026 03:43:11 GMT</pubDate>
+  <lastBuildDate>Fri, 03 Jul 2026 03:43:11 GMT</lastBuildDate>
   <atom:link href="https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/feed.xml" rel="self" type="application/rss+xml" />
   
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/checklist-001-1itg8rt.html</link>
+      <guid isPermaLink="true">https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/checklist-001-1itg8rt.html</guid>
+      <description><![CDATA[### 합정 셔츠룸 추천, 양자화 PR 머지 후의 GPU별 재현 조건과 그 함축된 정체성 아, 진짜... LLMs의 미세 동작과 버그로 인해 발생하는 instruction following 저하 현상에 대해 Q4_K_M 양자화에서 특정 히든 DIM이 잘려나가는 사례를 ]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title><![CDATA[합정 셔츠룸 추천 선택 전에 확인할 체크리스트와 실패 사례]]></title>
       <link>https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/checklist-001-1rz5n5.html</link>
@@ -64,6 +71,13 @@
       <guid isPermaLink="true">https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/myth-001-ih3foe.html</guid>
       <description><![CDATA[2019 년 가을, 내가 직접 재단한 셔츠의 어깨선이 3mm 에러를 보였다. 당시 합정역 인근 상가 지하 1 층에서 진행된 작업이었으나, 표준 규격에 따른 편차가 허용치를 넘었다. 그날 이후로 나는 단순한 '착용감'보다 '시스템 내의 허용 오차'를 더 중요하게 여기게 ]]></description>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/myth-002-4a1s3r.html</link>
+      <guid isPermaLink="true">https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/myth-002-4a1s3r.html</guid>
+      <description><![CDATA[### **프로덕션 배포 후 3개월간의 딜레마: Q4_K_M 양자화에서 발생하는 hidden_dim 충돌과 instruction following 저하 현상** #### 소제목 1. 실패 사례 복기2. 빈틈 없는 검토 과정3. 원인 분석 및 예측 가능성 --- ### ]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[합정 셔츠룸 추천에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
