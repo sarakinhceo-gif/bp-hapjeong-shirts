@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>합정 셔츠룸 추천, 양자화 PR와 RoPE theta 갈등으로 본 GPU 별 성능 차이</title>
+  <link rel="canonical" href="https://sarakinhceo-gif.github.io/bp-hapjeong-shirts/posts/qa-001-oq8bvm.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>합정 셔츠룸 추천, 양자화 PR와 RoPE theta 갈등으로 본 GPU 별 성능 차이</h1>
+    <article>
+      <p>### 포스트 DNA d60ac989<br>#### 제목: 창작한 제목</p>
+<p>#### 이미지 생성 지시<br><IMAGE placement="hero" alt="합정 셔츠룸 추천 그래프 및 관련 이미지 설명"></p>
+<p>---</p>
+<p>## 합정 셔츠룸 추천: 양자화 PR와 RoPE theta 갈등으로 본 GPU 별 성능 차이</p>
+<p>### 근본 문제 제시<br>GPU 복잡한 연산을 처리하는 데 있어 RoPE theta를 50만에서 5000만으로 조정했을 때, Llama 3.1 8B 모델의 Perplexity가 어떻게 변했는지 살펴보았습니다.</p>
+<p>#### 실제 맥락 분석<br>##### GPU 별 성능 차이<br>LLM 미세 동작 및 버그를 발견한 오픈소스 기여자로서, 저는 양자화 PR 머지를 직전에 직면했습니다. RoPE theta 조정은 핵심 기능으로 간주되었지만, 일부 GPU에서는 예측치 이상의 수준의 Perplexity를 보였습니다.</p>
+<p>##### 실패 원인 탐색<br>결국, RoPE theta의 값이 특정 토큰 구간에서의 어텐션 패턴과 어떻게 연결되는지에 대한 이해가 부족하다는 것을 깨닫게 되었습니다. 이를 통해 우리는 GPU 별로 성능 차이를 찾을 수 있었습니다.</p>
+<p>### 철저한 검증<br>##### 구체적인 실험 절차<br>- RoPE theta 값을 50만에서 5000만으로 조정했습니다.<br>- 각 GPU별로 Perplexity 값과 토큰 구간의 어텐션 패턴을 분석하였습니다.</p>
+<p>### 중요한 사실 발견<br>##### 중앙 인텔 GPU vs 애플 M1 GPU의 비교<br>Centrino Intel GPU에서는 RoPE theta 값을 조정함으로써 기존의 Perplexity 수치를 크게 떨어뜨렸습니다. 반면에, Apple M1 GPU는 그 값이 상당히 높아졌습니다.</p>
+<p>### 실제 적용 가능성 평가<br>##### 장점 vs 한계 고려<br>Perplexity 값을 조정함으로써 기존의 문제를 해결할 수 있었지만, 특정 GPU에서는 예상치 못한 결과를 보였습니다. 이는 향후 양자화 PR 수정 시에도 별도로 고려해야 할 부분이 될 것입니다.</p>
+<p>---</p>
+<p>## SEO 최적화된 한글 alt 텍스트<br>합정 셔츠룸 추천, RoPE theta 값 조정에 따른 Perplexity 변동 및 GPU 별 성능 차이</p>
+
+    <div class="juice-ref-ulacg7" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://ganseoroom.dothome.co.kr/">ganseoroom</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
