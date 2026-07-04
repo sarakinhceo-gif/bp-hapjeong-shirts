@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hapjeong-shirt-tip.node-link.shop/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://hapjeong-shirts.maphoshirts.com/sitemap.xml
