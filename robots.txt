@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hapjeong-shirts.node-link.shop/sitemap.xml
+Sitemap: https://hapjeong-shirt-tip.node-link.shop/sitemap.xml
