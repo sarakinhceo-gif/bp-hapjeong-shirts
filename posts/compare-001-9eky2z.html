@@ -25,21 +25,21 @@
       <p>"쿠버네티스 1.29에서 CSI 드라이버 상호작용의 볼륨 마운트 경합 버그에 대한 CVE와 Patch 추적"</p>
 <p><IMAGE placement="hero" alt="CUDDly Cheetos: 쿠버네티스 1.29에서 발생한 볼륨 마운트 경합 버그"></p>
 <p>이 글은 핵심 취약점을 중심으로 CVE(CVSS 점수: 9.8)와 silent patch의 진짜 의미를 분석합니다. 문제 해결 과정에 초점을 맞추며, CSI 드라이버와 관련된 복잡한 상호 작용과 그로 인한 경합 문제를 구체적으로 설명합니다.</p>
-<p>### CSI 드라이버와 볼륨 마운트 경합 버그</p>
+<h3>CSI 드라이버와 볼륨 마운트 경합 버그</h3>
 <p>CSI(CSI: Container Storage Interface) 드라이버는 Kubernetes에서 컨테이너 스토리지 프로비저닝을 위한 표준 인터페이스입니다. 그러나 1.29 업데이트에서 특정 CSI 드라이버와의 상호 작용으로 인해 볼륨 마운트 경합 버그 문제가 발생했습니다.</p>
-<p>### CVE 및 silent patch</p>
+<h3>CVE 및 silent patch</h3>
 <p>CVE는 취약점에 대한 심각성을 나타내는 점수로 CVSS 점수가 9.8라는 것은 매우 심각한 취약점을 의미합니다. 문제는 릴리스 노트에는 해당 CVE가 언급되지 않았습니다. 이를 해결하기 위해 silent patch가 개발되었지만, 이 역시 새로운 취약점으로 간주되며 CVSS 점수도 9.8로 설정되었습니다.</p>
-<p>### 문제 발생 배경</p>
+<h3>문제 발생 배경</h3>
 <p>CSI 드라이버와의 상호 작용은 복잡하고 다양한 경우를 생성합니다. 특히, 특정 CSI 드라이버가 잘못 설계되었거나 버그가 있으면 마치 시스템이 하나의 큰 포 interleaver처럼 behaves (행동하다) 때문입니다.</p>
-<p>### 구체적인 식별자와 사례</p>
+<h3>구체적인 식별자와 사례</h3>
 <p>CVE는 CVE-2023-XXXXXX로 표기되었습니다. 이 문제를 해결하기 위해 사용된 silent patch는 2023년 XXXXXX 버전으로 개발되었습니다. 해당 patch를 적용한 후, 볼륨 마운트 경합의 문제는 해결되었지만 새로운 취약점이 생성되어 CVSS 점수도 여전히 9.8로 유지됩니다.</p>
-<p>### 비교적 구체적인 실패 원인</p>
+<h3>비교적 구체적인 실패 원인</h3>
 <p>CVE-2023-XXXXXX 버그가 발생한 배경에는 다음과 같은 조건들이 있습니다: <br>1) CSI 드라이버의 잘못 설계<br>2) Kubernetes 업데이트에서 해당 CSI 드라이버와 상호 작용<br>3) 릴리스 노트에 CVE-2023-XXXXXX이 언급되지 않음</p>
-<p>### 참고文献 및 실패 원인</p>
+<h3>참고文献 및 실패 원인</h3>
 <p>CVE-2023-XXXXXX 버그의 발생은 특정 CSI 드라이버가 잘못 설계되었고, Kubernetes 업데이트에서 해당 CSI 드라이버와 상호 작용했기 때문입니다. 이를 해결하기 위해 silent patch가 개발되었습니다만, 이 역시 새로운 취약점을 생성하였습니다.</p>
-<p>### 결론</p>
+<h3>결론</h3>
 <p>CVE-2023-XXXXXX 버그는 CSI 드라이버의 잘못 설계 및 Kubernetes 업데이트에서 해당 드라이버와 상호 작용으로 발생한 문제입니다. 이를 해결하기 위해 silent patch가 개발되었지만, 이 역시 CVE가 여전히 존재하는 취약점으로 간주되었습니다. 따라서 사용자는 CVE-2023-XXXXXX 버그의 발생 배경과 관련된 CSI 드라이버와의 상호 작용을 잘 이해하고 조심해야 합니다.</p>
-<p>### 추가 참고文献</p>
+<h3>추가 참고文献</h3>
 <p>1) Kubernetes 1.29 릴리스 노트 (https://kubernetes.io/docs/setup/release/notes/)<br>2) CVE-2023-XXXXXX 공지 문서 (https://example.com/cve-notice)<br>3) CSI 드라이버 설계와 관리 참고 자료 (https://example.com/design-and-management-guide)</p>
 
     <div class="juice-ref-srnvlr" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
