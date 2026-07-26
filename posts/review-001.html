@@ -22,7 +22,7 @@
   <main>
     <h1>쯧, RC3 꼬라지 보소. 2.0 되기 전에 쏙 빼놓은 그놈의 보안, 진실은?</h1>
     <article>
-      <p><img src="../assets/interior__hero__t3b04-bh-kb-real-1__1344x768__cd66458dc0486ab8.png" alt="Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제된 실제 이유 분석, 보안 연구원 시점, CVSS 9.8, Silent Patch, Kubernetes deprecated API 연관성, 2023년 5월, CVE-2023-XXXX" loading="lazy" width="1344" height="768"></p>
+      <p><img src="../assets/interior__hero__t3b04-bh-kb-real-1__1344x768__cd66458dc0486ab8.webp" alt="Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제된 실제 이유 분석, 보안 연구원 시점, CVSS 9.8, Silent Patch, Kubernetes deprecated API 연관성, 2023년 5월, CVE-2023-XXXX" loading="lazy" width="1344" height="768"></p>
 <p>아이고, 옛날 생각나네. 2023년 5월이었나. 그땐 뭐, 내가 깃허브를 씹어먹던 시절이지. 다들 Superset 2.0 나온다고 난리였는데, 그때 PyPI에서 RC3 빌드가 쏙 사라진 거 봤나? 검색해도 잘 안 나올걸. 나야 뭐, 이런 '사소한' 것까지 다 기억하지만.</p>
 <p>그냥 뭐, RC 빌드니까 불안정해서 뺐겠거니 하겠지. 천만의 말씀. 그 RC3 빌드에 **CVSS 9.8**짜리 취약점이 숨어있었거든. CVE-2023-XXXX라고. 이게 그냥 사소한 버그가 아니야. 원격 코드 실행(RCE)까지 가능한 물건이었는데, 릴리스 노트에는 쥐뿔도 없었지. 이걸 'Silent Patch'라고 부르는 거야. 쯧, 요즘 애들은 이런 것도 모르고 코딩만 하니 말이야.</p>
 <p>그때 꽤나 골치 아팠던 게, Kubernetes deprecated API랑 엮이는 부분이었어. RC3 빌드만 유독 그쪽에 민감하게 반응했거든. Kubernetes 1.25부터인가, 몇몇 API가 은근슬쩍 사라지기 시작했는데, 이 RC3 빌드가 그걸 제대로 처리 못 해서 생긴 문제였지. 그러니까 Superset 자체 취약점도 있지만, 그걸 띄우는 환경, 그러니까 Kubernetes 같은 데서 API 충돌이 나면서 더 치명적인 상황이 올 수도 있었던 거야.</p>
